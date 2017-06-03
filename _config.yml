@@ -1,0 +1,64 @@
+name:               "vhomo"
+description:        ""
+
+url:                ""
+author:             "vhomo"
+email:              "vhomozhou@163.com"
+#gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+#twitter:            "jhondoe"
+email:              "vhomozhou@163.com"
+github:             "vhomo"
+#pinterest:          "jhondoe"
+#linkedin:           "jhondoe"
+#facebook:           "jhondoe"
+
+#disqus_shortname:   "vhomo"
+
+background:         "/resources/images/background.jpeg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+#kramdown:
+#    input: GFM
+
+#gems: [jekyll-mermaid]
+#
+#mermaid:
+#  src: '/resources/mermaid/src/mermaid.js'
+
+    #plugins: [jekyll-mermaid]
+#nav:
+#  - name:           "关于"
+#    href:           "/about"
+    #  - name:           "Download"
+    #    href:           "/releases"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
+  - jekyll-mermaid
+
+mermaid:
+    src: '/resources/mermaid/mermaid.min.js'
